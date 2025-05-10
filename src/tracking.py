@@ -1,5 +1,9 @@
-from detection import *
+"""
+Created on 5-10-2025
+@author: Jenish
+"""
 
+from src.detection import *
 
 # creating the ROI
 roi = cv2.selectROI(frame, False)
