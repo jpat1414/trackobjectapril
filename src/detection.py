@@ -7,9 +7,15 @@ Created on 5-10-2025
 import cv2
 import argparse
 
+import os
+
+record_dir = 'recording'
+if not os.path.exists(record_dir):
+    os.makedirs(record_dir)
+
 
 # initializing the object tracker
-object_tracker = cv2.TrackerMedianFlow.create()
+object_tracker = cv2.legacy.TrackerCSRT_create()
 webcam = cv2.VideoCapture(0)
 if not webcam.isOpened():
     raise Exception("Could not open video device")
