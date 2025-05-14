@@ -14,7 +14,7 @@ object = object_tracker.init(frame, roi)
 if not object:
     raise Exception("tracker not initialized")
 
-box_color = (255, 0, 0)
+box_color = (0, 0, 255)
 
 # loop to read the video
 active = True
@@ -27,10 +27,10 @@ while active:
     if obj:
         x, y, w, h = map(int, bbox)
         cv2.rectangle(frame, (x, y), (x + w, y + h), box_color, 2)
-        cv2.putText(frame, "Tracking object", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, box_color)
+        cv2.putText(frame, "Tracking object", (10, 30), cv2.FONT_HERSHEY_COMPLEX_SMALL, 1, box_color)
         output.write(frame)
     else:
-        cv2.putText(frame, "Cannot track object", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, box_color)
+        cv2.putText(frame, "Cannot track object", (10, 30), cv2.FONT_HERSHEY_COMPLEX_SMALL, 1, box_color)
 
     # display the frame
     cv2.imshow("Object Tracking", frame)
