@@ -14,8 +14,6 @@ object = object_tracker.init(frame, roi)
 if not object:
     raise Exception("tracker not initialized")
 
-
-#create bounding box color
 box_color = (255, 0, 0)
 
 # loop to read the video

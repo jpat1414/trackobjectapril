@@ -26,7 +26,7 @@ if not ret:
 
 print("object tracker initialized")
 
-# recording the video
+
 framewidth = int(webcam.get(cv2.CAP_PROP_FRAME_WIDTH))
 frameheight = int(webcam.get(cv2.CAP_PROP_FRAME_HEIGHT))
 framecount = int(webcam.get(cv2.CAP_PROP_FRAME_COUNT))
