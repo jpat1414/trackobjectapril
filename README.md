@@ -1,9 +1,5 @@
 # Object Tracking with OpenCV
 
-## Description
-
-Real-time tracking using OpenCV in Python. Allows user to select the region of interest before tracking starts. 
-
 ---
 
 ## Installation
