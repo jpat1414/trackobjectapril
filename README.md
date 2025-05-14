@@ -6,12 +6,16 @@ Real-time tracking using OpenCV in Python. Allows user to select the region of i
 
 ---
 
-## Installing and Running
+## Installation
 
 **Install the required dependencies:**
 ```bash
 pip install opencv-contrib-python
 ```
+
+---
+
+## Running
 
 **From project root folder run:**
 ```bash
